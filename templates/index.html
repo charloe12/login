@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block home%}
+{% for us in user %}
+
+<div class="user">
+    <p>{{us.username}}</p>
+    <a href="del/{{us.username}}"><img width="20px" src="/static/img/trash.jpg" alt=""></a>
+</div>
+
+{% endfor %}
+{% endblock%}
